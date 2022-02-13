@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  --nav-height: 126px;
+  --footer-height: 243px;
+  --primary: #09357B;
+  --primary-lighten: #3460ad;
+  --secondary: #5A5A59;  
+  --red: #D32F2F;
+  --yellow: #FFC107;
+  --green: #388E3C;
+  --light-blue: #2196F3;
+  --light-grey: #979797;
+  --text-black: color: rgba(0, 0, 0, 0.87);
+  --text-white: #fff;
+  --text-grey: #868E96;
+  --border : border: 1px solid rgba(0, 0, 0, 0.42);
+}
+button{
+  font-family: Roboto;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 30px auto;
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height))
+}
+.container h4 {
+  margin-bottom: 24px;;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1{
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -0.658286px;
+}
+h2{
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+h3{
+  font-size: 48px;
+  line-height: 49px;
+}
+h4{
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.07px;
+}
+h5{
+  font-size: 24px;
+  line-height: 32px;
+}
+h6{
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.07px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.09px;
+}

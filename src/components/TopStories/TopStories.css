@@ -1,0 +1,112 @@
+.header-top-stories {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-top-stories h4 {
+  margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .top-stories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  .top-stories > * {
+    flex: 1 1 auto;
+    max-width: 340px;
+    min-width: 300px;
+    height: 250px;
+    min-height: 136px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top-stories {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 255px 138px 350px;
+    grid-template-areas:
+      "L L L L L L S1 S1 S1 S2 S2 S2"
+      "L L L L L L XS1 XS1 XS1 XS2 XS2 XS2"
+      "M1 M1 M1 M1 M2 M2 M2 M2 M3 M3 M3 M3 ";
+    grid-gap: 30px;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  .L {
+    grid-area: L;
+    border-bottom: 3px solid var(--green);
+  }
+  .S1 {
+    grid-area: S1;
+    /* border-bottom: 3px solid var(--green) */
+  }
+  .S2 {
+    grid-area: S2;
+    border-bottom: 3px solid var(--yellow);
+  }
+  .XS1 {
+    grid-area: XS1;
+    border-bottom: 3px solid var(--light-blue);
+  }
+  .XS2 {
+    grid-area: XS2;
+    border-bottom: 3px solid var(--green);
+  }
+  .M1 {
+    grid-area: M1;
+  }
+  .M2 {
+    grid-area: M2;
+  }
+  .M3 {
+    grid-area: M3;
+  }
+  .L .title {
+    font-size: 1.1em;
+    line-height: 31px;
+  }
+  .XS1 img,
+  .XS2 img {
+    display: none;
+  }
+  .XS1 .title,
+  .XS2 .title {
+    opacity: 1;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .XS1 .body,
+  .XS2 .body {
+    display: none;
+  }
+  .S1 .title,
+  .S2 .title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .S1 .body,
+  .S2 .body {
+    display: none;
+  }
+  .M1 .title,
+  .M2 .title {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .L .text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-top-stories {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

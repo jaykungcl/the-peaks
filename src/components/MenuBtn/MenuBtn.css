@@ -1,0 +1,38 @@
+.menu-btn {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.menu-btn button {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: none;
+}
+.menu-btn button svg {
+  margin-right: 8px;
+}
+
+select {
+  padding: 10px;
+  width: 255px;
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    align-self: stretch;
+    justify-content: space-between;
+  }
+  .menu-btn button {
+    font-size: 12px;
+  }
+  select {
+    width: 160px;
+  }
+}

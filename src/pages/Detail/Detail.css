@@ -1,0 +1,31 @@
+.article-content {
+  margin-bottom: 16px;
+}
+.article-content p {
+  margin-bottom: 18px;
+}
+.article-header .title {
+  margin-bottom: 12px;
+}
+.article-header .headline {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--light-grey);
+}
+.article-header .date-time {
+  margin-bottom: 16px;
+}
+figure {
+  margin: 24px 0;
+  text-align: center;
+  color: var(--light-grey);
+  font-size: 14px;
+}
+figure img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  margin: auto;
+  margin-bottom: 12px;
+}

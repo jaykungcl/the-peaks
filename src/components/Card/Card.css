@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--red);
+}
+.card:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.card.sport {
+  border-bottom: 3px solid var(--red);
+}
+.card.culture {
+  border-bottom: 3px solid var(--yellow);
+}
+.card.lifeandstyle {
+  border-bottom: 3px solid var(--light-blue);
+}
+
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+.card .text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  height: 136px;
+  background-color: var(--primary);
+  opacity: 0.9;
+  color: var(--text-white);
+  line-height: 29px;
+}
+.card .text .title.small {
+  font-size: 16px;
+  line-height: 26px;
+}
+.card .text .body {
+  height: 60px;
+  overflow: hidden;
+}
+.card .text .body p {
+  font-size: 13px;
+  margin-top: 16px;
+  line-height: 20px;
+}
+.card a {
+  color: var(--text-white);
+}
+.card .text .body > *:not(p:first-of-type) {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    height: 300px;
+  }
+  .card .text {
+    height: 120px;
+  }
+  .card .text .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card .text .title {
+    font-size: 16px;
+  }
+}
